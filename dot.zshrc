@@ -530,6 +530,7 @@ if zplug check "bhilburn/powerlevel9k"; then
     DEFAULT_COLOR="clear"
 
     P9K_MODE="nerdfont-complete"
+    #P9K_MODE="Iosevka"
     P9K_STATUS_VERBOSE=false
     P9K_DIR_SHORTEN_LENGTH=1
     #P9K_SHORTEN_STRATEGY="truncate_right"
@@ -546,10 +547,12 @@ if zplug check "bhilburn/powerlevel9k"; then
 
     #P9K_LEFT_SUBSEGMENT_SEPARATOR="%F{$DEFAULT_BACKGROUND}\ue0b0%f"
     #P9K_RIGHT_SUBSEGMENT_SEPARATOR="%F{$DEFAULT_BACKGROUND}\ue0b2%f"
-    P9K_LEFT_SUBSEGMENT_SEPARATOR_ICON="%F{232}\uE0BD%f"
-    P9K_RIGHT_SUBSEGMENT_SEPARATOR_ICON="%F{232}\uE0BD%f"
-    #P9K_RIGHT_SUBSEGMENT_SEPARATOR="%F{000}%f"
-    #P9K_LEFT_SUBSEGMENT_SEPARATOR="%F{000}／%f" # 
+    
+    #P9K_LEFT_SUBSEGMENT_SEPARATOR_ICON="%F{232}\uE0BD%f"
+    #P9K_RIGHT_SUBSEGMENT_SEPARATOR_ICON="%F{232}\uE0BD%f"
+    
+    P9K_RIGHT_SUBSEGMENT_SEPARATOR_ICON="%F{000}%f"
+    P9K_LEFT_SUBSEGMENT_SEPARATOR_ICON="%F{000}／%f" # 
     #P9K_RIGHT_SUBSEGMENT_SEPARATOR="%F{000}／%f" #
     #P9K_LEFT_SUBSEGMENT_SEPARATOR="%F{$(( $DEFAULT_BACKGROUND - 3 ))}／%f"
     #P9K_RIGHT_SUBSEGMENT_SEPARATOR="%F{$(( $DEFAULT_BACKGROUND - 3 ))}／%f"
@@ -589,8 +592,6 @@ if zplug check "bhilburn/powerlevel9k"; then
     P9K_LEFT_PROMPT_ELEMENTS=(os_icon context dir dir_writable vcs)
     P9K_RIGHT_PROMPT_ELEMENTS=(status battery)
     #P9K_RIGHT_PROMPT_ELEMENTS=(status exec_time)
-
-    P9K_MODE='nerdfont-complete'
 
     P9K_VCS_GIT_GITHUB_ICON=""
     P9K_VCS_GIT_BITBUCKET_ICON=""
