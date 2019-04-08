@@ -741,3 +741,6 @@ zstyle ':completion:*:default' list-colors "${(s.:.)LS_COLORS}"
 
 # vim: ft=zsh sw=4 sts=4 et
 
+#Automatically source aws_zsh_completer.sh
+source ~/.local/bin/aws_zsh_completer.sh
+
