@@ -744,3 +744,5 @@ zstyle ':completion:*:default' list-colors "${(s.:.)LS_COLORS}"
 #Automatically source aws_zsh_completer.sh
 source ~/.local/bin/aws_zsh_completer.sh
 
+# source local binaries in path
+PATH=$PATH:~/.local/bin
