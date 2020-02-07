@@ -1,0 +1,53 @@
+#!/bin/bash
+
+alias pj="cd ~/projects"
+alias tst="cd ~/testing"
+alias dl="cd ~/Téléchargements"
+
+#use python3 by default
+#alias python="python3"
+
+#deal with copy/paste from/to clipboard
+alias cc="xclip -sel clip"
+alias pc="xclip -sel clip -o"
+
+# python3 aliases
+#alias pip="python3 -m pip"
+#alias python="python3"
+
+# Alias to activate virtualenv with Ansible version 1.6.17 (to avoid untar issue during packer work
+alias ansiblePacker="source /home/gocho/projects/venv/ansible4Packer/bin/activate"
+
+# Alias for flutter
+alias flutter="/home/gocho/Téléchargements/flutter/bin/flutter"
+
+# Own projects folder
+alias own="cd /home/gocho/projects/own"
+
+# cd to xke folder
+alias xke="cd /home/gocho/projects/xke"
+
+# Activate virtualenv for ssha and launch it
+alias sshac="source ~/projects/venv/ssha/bin/activate && ssha --settings ~/projects/venv/.ssha"
+
+# Git aliases
+alias gc="git checkout "
+alias ga="git add "
+alias gco="git commit -m "
+alias gp="git push "
+alias gl="git prettylog"
+alias gs="git status"
+alias gpl="git pull"
+
+#alias rofi="rofi -modi 1pass:rofi-1pass -show 1pass"
+
+# docker aliases
+alias dc="docker-compose "
+
+# kubectl aliases
+alias k="kubectl "
+alias ke="kubectl explain "
+alias kg="kubectl get "
+alias kn="kubectl config set-context --current --namespace "
+# g alias. This alias exists because of a noisy alias g to git defined somewhere but not found...
+alias goenv="$HOME/.local/bin/g"
